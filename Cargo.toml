@@ -13,7 +13,7 @@
 [package]
 edition = "2018"
 name = "bytes"
-version = "0.5.4"
+version = "0.5.5"
 authors = ["Carl Lerche <me@carllerche.com>", "Sean McArthur <sean@seanmonstar.com>"]
 description = "Types and traits for working with bytes"
 documentation = "https://docs.rs/bytes"
@@ -23,13 +23,15 @@ categories = ["network-programming", "data-structures"]
 license = "MIT"
 repository = "https://github.com/tokio-rs/bytes"
 [dependencies.serde]
-version = "1.0"
+version = "1.0.60"
+features = ["alloc"]
 optional = true
+default-features = false
 [dev-dependencies.serde_test]
 version = "1.0"
 
 [features]
 default = ["std"]
 std = []
-[target."cfg(not(windows))".dev-dependencies.loom]
-version = "0.2.13"
+[target."cfg(loom)".dependencies.loom]
+version = "0.3"

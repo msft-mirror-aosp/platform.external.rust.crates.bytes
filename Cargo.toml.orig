@@ -6,7 +6,7 @@ name = "bytes"
 # - Update CHANGELOG.md.
 # - Update doc URL.
 # - Create "v0.5.x" git tag.
-version = "0.5.5"
+version = "0.5.6"
 license = "MIT"
 authors = [
     "Carl Lerche <me@carllerche.com>",
@@ -30,5 +30,5 @@ serde = { version = "1.0.60", optional = true, default-features = false, feature
 [dev-dependencies]
 serde_test = "1.0"
 
-[target.'cfg(loom)'.dependencies]
+[target.'cfg(loom)'.dev-dependencies]
 loom = "0.3"

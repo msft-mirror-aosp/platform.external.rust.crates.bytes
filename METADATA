@@ -1,0 +1,19 @@
+name: "bytes"
+description: "Types and traits for working with bytes"
+third_party {
+  url {
+    type: HOMEPAGE
+    value: "https://crates.io/crates/bytes"
+  }
+  url {
+    type: GIT
+    value: "https://github.com/tokio-rs/bytes"
+  }
+  version: "0.5.6"
+  license_type: NOTICE
+  last_upgrade_date {
+    year: 2020
+    month: 7
+    day: 17
+  }
+}

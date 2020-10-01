@@ -13,7 +13,7 @@
 [package]
 edition = "2018"
 name = "bytes"
-version = "0.5.5"
+version = "0.5.6"
 authors = ["Carl Lerche <me@carllerche.com>", "Sean McArthur <sean@seanmonstar.com>"]
 description = "Types and traits for working with bytes"
 documentation = "https://docs.rs/bytes"
@@ -33,5 +33,5 @@ version = "1.0"
 [features]
 default = ["std"]
 std = []
-[target."cfg(loom)".dependencies.loom]
+[target."cfg(loom)".dev-dependencies.loom]
 version = "0.3"

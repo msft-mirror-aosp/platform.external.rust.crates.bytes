@@ -5,15 +5,15 @@ name = "bytes"
 # - Update html_root_url.
 # - Update CHANGELOG.md.
 # - Update doc URL.
-# - Create "v0.5.x" git tag.
-version = "0.5.6"
+# - Create "v1.0.x" git tag.
+version = "1.0.1"
 license = "MIT"
 authors = [
     "Carl Lerche <me@carllerche.com>",
     "Sean McArthur <sean@seanmonstar.com>",
 ]
 description = "Types and traits for working with bytes"
-documentation = "https://docs.rs/bytes"
+documentation = "https://docs.rs/bytes/1.0.1/bytes/"
 repository = "https://github.com/tokio-rs/bytes"
 readme = "README.md"
 keywords = ["buffers", "zero-copy", "io"]
@@ -31,4 +31,4 @@ serde = { version = "1.0.60", optional = true, default-features = false, feature
 serde_test = "1.0"
 
 [target.'cfg(loom)'.dev-dependencies]
-loom = "0.3"
+loom = "0.4"

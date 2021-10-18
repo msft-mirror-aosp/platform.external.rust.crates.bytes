@@ -288,6 +288,7 @@ fn split_to_uninitialized() {
 }
 
 #[test]
+#[ignore = "Android: we unwind differently."]
 fn split_off_to_at_gt_len() {
     fn make_bytes() -> Bytes {
         let mut bytes = BytesMut::with_capacity(100);

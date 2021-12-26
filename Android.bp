@@ -21,37 +21,6 @@ license {
 rust_defaults {
     name: "bytes_test_defaults",
     crate_name: "bytes",
-    srcs: ["src/lib.rs"],
-    cargo_env_compat: true,
-    cargo_pkg_version: "1.1.0",
-    test_suites: ["general-tests"],
-    auto_gen_config: true,
-    edition: "2018",
-    features: [
-        "default",
-        "std",
-    ],
-    rustlibs: [
-        "libserde_test",
-    ],
-}
-
-rust_test_host {
-    name: "bytes_host_test_src_lib",
-    defaults: ["bytes_test_defaults"],
-    test_options: {
-        unit_test: true,
-    },
-}
-
-rust_test {
-    name: "bytes_device_test_src_lib",
-    defaults: ["bytes_test_defaults"],
-}
-
-rust_defaults {
-    name: "bytes_test_defaults_bytes",
-    crate_name: "bytes",
     cargo_env_compat: true,
     cargo_pkg_version: "1.1.0",
     test_suites: ["general-tests"],
@@ -67,9 +36,10 @@ rust_defaults {
     ],
 }
 
-rust_test_host {
-    name: "bytes_host_test_tests_test_buf",
-    defaults: ["bytes_test_defaults_bytes"],
+rust_test {
+    name: "bytes_test_tests_test_buf",
+    defaults: ["bytes_test_defaults"],
+    host_supported: true,
     srcs: ["tests/test_buf.rs"],
     test_options: {
         unit_test: true,
@@ -77,14 +47,9 @@ rust_test_host {
 }
 
 rust_test {
-    name: "bytes_device_test_tests_test_buf",
-    defaults: ["bytes_test_defaults_bytes"],
-    srcs: ["tests/test_buf.rs"],
-}
-
-rust_test_host {
-    name: "bytes_host_test_tests_test_buf_mut",
-    defaults: ["bytes_test_defaults_bytes"],
+    name: "bytes_test_tests_test_buf_mut",
+    defaults: ["bytes_test_defaults"],
+    host_supported: true,
     srcs: ["tests/test_buf_mut.rs"],
     test_options: {
         unit_test: true,
@@ -92,14 +57,9 @@ rust_test_host {
 }
 
 rust_test {
-    name: "bytes_device_test_tests_test_buf_mut",
-    defaults: ["bytes_test_defaults_bytes"],
-    srcs: ["tests/test_buf_mut.rs"],
-}
-
-rust_test_host {
-    name: "bytes_host_test_tests_test_bytes",
-    defaults: ["bytes_test_defaults_bytes"],
+    name: "bytes_test_tests_test_bytes",
+    defaults: ["bytes_test_defaults"],
+    host_supported: true,
     srcs: ["tests/test_bytes.rs"],
     test_options: {
         unit_test: true,
@@ -107,14 +67,9 @@ rust_test_host {
 }
 
 rust_test {
-    name: "bytes_device_test_tests_test_bytes",
-    defaults: ["bytes_test_defaults_bytes"],
-    srcs: ["tests/test_bytes.rs"],
-}
-
-rust_test_host {
-    name: "bytes_host_test_tests_test_bytes_odd_alloc",
-    defaults: ["bytes_test_defaults_bytes"],
+    name: "bytes_test_tests_test_bytes_odd_alloc",
+    defaults: ["bytes_test_defaults"],
+    host_supported: true,
     srcs: ["tests/test_bytes_odd_alloc.rs"],
     test_options: {
         unit_test: true,
@@ -122,14 +77,9 @@ rust_test_host {
 }
 
 rust_test {
-    name: "bytes_device_test_tests_test_bytes_odd_alloc",
-    defaults: ["bytes_test_defaults_bytes"],
-    srcs: ["tests/test_bytes_odd_alloc.rs"],
-}
-
-rust_test_host {
-    name: "bytes_host_test_tests_test_bytes_vec_alloc",
-    defaults: ["bytes_test_defaults_bytes"],
+    name: "bytes_test_tests_test_bytes_vec_alloc",
+    defaults: ["bytes_test_defaults"],
+    host_supported: true,
     srcs: ["tests/test_bytes_vec_alloc.rs"],
     test_options: {
         unit_test: true,
@@ -137,14 +87,9 @@ rust_test_host {
 }
 
 rust_test {
-    name: "bytes_device_test_tests_test_bytes_vec_alloc",
-    defaults: ["bytes_test_defaults_bytes"],
-    srcs: ["tests/test_bytes_vec_alloc.rs"],
-}
-
-rust_test_host {
-    name: "bytes_host_test_tests_test_chain",
-    defaults: ["bytes_test_defaults_bytes"],
+    name: "bytes_test_tests_test_chain",
+    defaults: ["bytes_test_defaults"],
+    host_supported: true,
     srcs: ["tests/test_chain.rs"],
     test_options: {
         unit_test: true,
@@ -152,14 +97,9 @@ rust_test_host {
 }
 
 rust_test {
-    name: "bytes_device_test_tests_test_chain",
-    defaults: ["bytes_test_defaults_bytes"],
-    srcs: ["tests/test_chain.rs"],
-}
-
-rust_test_host {
-    name: "bytes_host_test_tests_test_debug",
-    defaults: ["bytes_test_defaults_bytes"],
+    name: "bytes_test_tests_test_debug",
+    defaults: ["bytes_test_defaults"],
+    host_supported: true,
     srcs: ["tests/test_debug.rs"],
     test_options: {
         unit_test: true,
@@ -167,14 +107,9 @@ rust_test_host {
 }
 
 rust_test {
-    name: "bytes_device_test_tests_test_debug",
-    defaults: ["bytes_test_defaults_bytes"],
-    srcs: ["tests/test_debug.rs"],
-}
-
-rust_test_host {
-    name: "bytes_host_test_tests_test_iter",
-    defaults: ["bytes_test_defaults_bytes"],
+    name: "bytes_test_tests_test_iter",
+    defaults: ["bytes_test_defaults"],
+    host_supported: true,
     srcs: ["tests/test_iter.rs"],
     test_options: {
         unit_test: true,
@@ -182,14 +117,9 @@ rust_test_host {
 }
 
 rust_test {
-    name: "bytes_device_test_tests_test_iter",
-    defaults: ["bytes_test_defaults_bytes"],
-    srcs: ["tests/test_iter.rs"],
-}
-
-rust_test_host {
-    name: "bytes_host_test_tests_test_reader",
-    defaults: ["bytes_test_defaults_bytes"],
+    name: "bytes_test_tests_test_reader",
+    defaults: ["bytes_test_defaults"],
+    host_supported: true,
     srcs: ["tests/test_reader.rs"],
     test_options: {
         unit_test: true,
@@ -197,39 +127,13 @@ rust_test_host {
 }
 
 rust_test {
-    name: "bytes_device_test_tests_test_reader",
-    defaults: ["bytes_test_defaults_bytes"],
-    srcs: ["tests/test_reader.rs"],
-}
-
-rust_test_host {
-    name: "bytes_host_test_tests_test_serde",
-    defaults: ["bytes_test_defaults_bytes"],
-    srcs: ["tests/test_serde.rs"],
-    test_options: {
-        unit_test: true,
-    },
-}
-
-rust_test {
-    name: "bytes_device_test_tests_test_serde",
-    defaults: ["bytes_test_defaults_bytes"],
-    srcs: ["tests/test_serde.rs"],
-}
-
-rust_test_host {
-    name: "bytes_host_test_tests_test_take",
-    defaults: ["bytes_test_defaults_bytes"],
+    name: "bytes_test_tests_test_take",
+    defaults: ["bytes_test_defaults"],
+    host_supported: true,
     srcs: ["tests/test_take.rs"],
     test_options: {
         unit_test: true,
     },
-}
-
-rust_test {
-    name: "bytes_device_test_tests_test_take",
-    defaults: ["bytes_test_defaults_bytes"],
-    srcs: ["tests/test_take.rs"],
 }
 
 rust_library {
@@ -246,6 +150,7 @@ rust_library {
     ],
     apex_available: [
         "//apex_available:platform",
+        "com.android.bluetooth",
         "com.android.compos",
         "com.android.resolv",
         "com.android.uwb",

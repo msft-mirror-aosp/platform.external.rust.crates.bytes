@@ -16,6 +16,9 @@
   ],
   "presubmit": [
     {
+      "name": "authfs_device_test_src_lib"
+    },
+    {
       "name": "bytes_test_tests_test_buf"
     },
     {
@@ -65,6 +68,9 @@
     }
   ],
   "presubmit-rust": [
+    {
+      "name": "authfs_device_test_src_lib"
+    },
     {
       "name": "bytes_test_tests_test_buf"
     },

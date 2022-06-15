@@ -14,61 +14,11 @@
       "path": "external/rust/crates/tokio-test"
     }
   ],
-  "postsubmit": [
-    {
-      "name": "authfs_device_test_src_lib"
-    },
-    {
-      "name": "bytes_test_tests_test_buf"
-    },
-    {
-      "name": "bytes_test_tests_test_buf_mut"
-    },
-    {
-      "name": "bytes_test_tests_test_bytes"
-    },
-    {
-      "name": "bytes_test_tests_test_bytes_odd_alloc"
-    },
-    {
-      "name": "bytes_test_tests_test_bytes_vec_alloc"
-    },
-    {
-      "name": "bytes_test_tests_test_chain"
-    },
-    {
-      "name": "bytes_test_tests_test_debug"
-    },
-    {
-      "name": "bytes_test_tests_test_iter"
-    },
-    {
-      "name": "bytes_test_tests_test_reader"
-    },
-    {
-      "name": "bytes_test_tests_test_take"
-    },
-    {
-      "name": "doh_unit_test"
-    },
-    {
-      "name": "libapkverify.integration_test"
-    },
-    {
-      "name": "libapkverify.test"
-    },
-    {
-      "name": "microdroid_manager_test"
-    },
-    {
-      "name": "rustBinderTest"
-    },
-    {
-      "name": "virtualizationservice_device_test"
-    }
-  ],
   "presubmit": [
     {
+      "name": "apkdmverity.test"
+    },
+    {
       "name": "authfs_device_test_src_lib"
     },
     {
@@ -109,6 +59,9 @@
     },
     {
       "name": "libapkverify.test"
+    },
+    {
+      "name": "libidsig.test"
     },
     {
       "name": "microdroid_manager_test"
@@ -122,6 +75,9 @@
   ],
   "presubmit-rust": [
     {
+      "name": "apkdmverity.test"
+    },
+    {
       "name": "authfs_device_test_src_lib"
     },
     {
@@ -162,6 +118,9 @@
     },
     {
       "name": "libapkverify.test"
+    },
+    {
+      "name": "libidsig.test"
     },
     {
       "name": "microdroid_manager_test"

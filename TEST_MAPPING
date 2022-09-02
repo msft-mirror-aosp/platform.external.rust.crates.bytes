@@ -16,6 +16,9 @@
   ],
   "presubmit": [
     {
+      "name": "apkdmverity.test"
+    },
+    {
       "name": "authfs_device_test_src_lib"
     },
     {
@@ -56,6 +59,9 @@
     },
     {
       "name": "libapkverify.test"
+    },
+    {
+      "name": "libidsig.test"
     },
     {
       "name": "microdroid_manager_test"
@@ -69,6 +75,9 @@
   ],
   "presubmit-rust": [
     {
+      "name": "apkdmverity.test"
+    },
+    {
       "name": "authfs_device_test_src_lib"
     },
     {
@@ -109,6 +118,9 @@
     },
     {
       "name": "libapkverify.test"
+    },
+    {
+      "name": "libidsig.test"
     },
     {
       "name": "microdroid_manager_test"

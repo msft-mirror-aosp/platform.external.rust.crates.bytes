@@ -2,6 +2,9 @@
 {
   "imports": [
     {
+      "path": "external/rust/crates/async-stream"
+    },
+    {
       "path": "external/rust/crates/futures-util"
     },
     {
@@ -22,6 +25,15 @@
       "name": "authfs_device_test_src_lib"
     },
     {
+      "name": "avmdtool.test"
+    },
+    {
+      "name": "avmdtool_tests"
+    },
+    {
+      "name": "bluetooth_with_facades.test"
+    },
+    {
       "name": "bytes_test_tests_test_buf"
     },
     {
@@ -61,7 +73,19 @@
       "name": "libapkverify.test"
     },
     {
-      "name": "libidsig.test"
+      "name": "libpvmfw_avb.integration_test"
+    },
+    {
+      "name": "libuwb_adaptation_jni_tests"
+    },
+    {
+      "name": "libuwb_core_tests"
+    },
+    {
+      "name": "libuwb_uci_jni_rust_tests"
+    },
+    {
+      "name": "libuwb_uci_packet_tests"
     },
     {
       "name": "microdroid_manager_test"
@@ -70,7 +94,7 @@
       "name": "rustBinderTest"
     },
     {
-      "name": "virtualizationservice_device_test"
+      "name": "virtualizationmanager_device_test"
     }
   ],
   "presubmit-rust": [
@@ -81,6 +105,15 @@
       "name": "authfs_device_test_src_lib"
     },
     {
+      "name": "avmdtool.test"
+    },
+    {
+      "name": "avmdtool_tests"
+    },
+    {
+      "name": "bluetooth_with_facades.test"
+    },
+    {
       "name": "bytes_test_tests_test_buf"
     },
     {
@@ -120,7 +153,19 @@
       "name": "libapkverify.test"
     },
     {
-      "name": "libidsig.test"
+      "name": "libpvmfw_avb.integration_test"
+    },
+    {
+      "name": "libuwb_adaptation_jni_tests"
+    },
+    {
+      "name": "libuwb_core_tests"
+    },
+    {
+      "name": "libuwb_uci_jni_rust_tests"
+    },
+    {
+      "name": "libuwb_uci_packet_tests"
     },
     {
       "name": "microdroid_manager_test"
@@ -129,7 +174,7 @@
       "name": "rustBinderTest"
     },
     {
-      "name": "virtualizationservice_device_test"
+      "name": "virtualizationmanager_device_test"
     }
   ]
 }

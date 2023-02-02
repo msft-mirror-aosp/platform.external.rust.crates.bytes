@@ -15,25 +15,34 @@
     },
     {
       "path": "external/rust/crates/tokio-test"
+    },
+    {
+      "path": "external/uwb/src"
+    },
+    {
+      "path": "packages/modules/DnsResolver"
+    },
+    {
+      "path": "packages/modules/Virtualization/apkdmverity"
+    },
+    {
+      "path": "packages/modules/Virtualization/authfs"
+    },
+    {
+      "path": "packages/modules/Virtualization/avmd"
+    },
+    {
+      "path": "packages/modules/Virtualization/libs/apkverify"
+    },
+    {
+      "path": "packages/modules/Virtualization/microdroid_manager"
+    },
+    {
+      "path": "packages/modules/Virtualization/virtualizationmanager"
     }
   ],
   "presubmit": [
     {
-      "name": "apkdmverity.test"
-    },
-    {
-      "name": "authfs_device_test_src_lib"
-    },
-    {
-      "name": "avmdtool.test"
-    },
-    {
-      "name": "avmdtool_tests"
-    },
-    {
-      "name": "bluetooth_with_facades.test"
-    },
-    {
       "name": "bytes_test_tests_test_buf"
     },
     {
@@ -62,58 +71,10 @@
     },
     {
       "name": "bytes_test_tests_test_take"
-    },
-    {
-      "name": "doh_unit_test"
-    },
-    {
-      "name": "libapkverify.integration_test"
-    },
-    {
-      "name": "libapkverify.test"
-    },
-    {
-      "name": "libpvmfw_avb.integration_test"
-    },
-    {
-      "name": "libuwb_adaptation_jni_tests"
-    },
-    {
-      "name": "libuwb_core_tests"
-    },
-    {
-      "name": "libuwb_uci_jni_rust_tests"
-    },
-    {
-      "name": "libuwb_uci_packet_tests"
-    },
-    {
-      "name": "microdroid_manager_test"
-    },
-    {
-      "name": "rustBinderTest"
-    },
-    {
-      "name": "virtualizationmanager_device_test"
     }
   ],
   "presubmit-rust": [
     {
-      "name": "apkdmverity.test"
-    },
-    {
-      "name": "authfs_device_test_src_lib"
-    },
-    {
-      "name": "avmdtool.test"
-    },
-    {
-      "name": "avmdtool_tests"
-    },
-    {
-      "name": "bluetooth_with_facades.test"
-    },
-    {
       "name": "bytes_test_tests_test_buf"
     },
     {
@@ -142,39 +103,6 @@
     },
     {
       "name": "bytes_test_tests_test_take"
-    },
-    {
-      "name": "doh_unit_test"
-    },
-    {
-      "name": "libapkverify.integration_test"
-    },
-    {
-      "name": "libapkverify.test"
-    },
-    {
-      "name": "libpvmfw_avb.integration_test"
-    },
-    {
-      "name": "libuwb_adaptation_jni_tests"
-    },
-    {
-      "name": "libuwb_core_tests"
-    },
-    {
-      "name": "libuwb_uci_jni_rust_tests"
-    },
-    {
-      "name": "libuwb_uci_packet_tests"
-    },
-    {
-      "name": "microdroid_manager_test"
-    },
-    {
-      "name": "rustBinderTest"
-    },
-    {
-      "name": "virtualizationmanager_device_test"
     }
   ]
 }

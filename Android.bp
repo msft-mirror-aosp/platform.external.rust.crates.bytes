@@ -28,10 +28,12 @@ rust_defaults {
     edition: "2018",
     features: [
         "default",
+        "serde",
         "std",
     ],
     rustlibs: [
         "libbytes",
+        "libserde",
         "libserde_test",
     ],
 }
@@ -127,6 +129,16 @@ rust_test {
 }
 
 rust_test {
+    name: "bytes_test_tests_test_serde",
+    defaults: ["bytes_test_defaults"],
+    host_supported: true,
+    srcs: ["tests/test_serde.rs"],
+    test_options: {
+        unit_test: true,
+    },
+}
+
+rust_test {
     name: "bytes_test_tests_test_take",
     defaults: ["bytes_test_defaults"],
     host_supported: true,
@@ -146,7 +158,11 @@ rust_library {
     edition: "2018",
     features: [
         "default",
+        "serde",
         "std",
+    ],
+    rustlibs: [
+        "libserde",
     ],
     apex_available: [
         "//apex_available:platform",

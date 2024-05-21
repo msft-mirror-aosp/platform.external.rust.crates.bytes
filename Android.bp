@@ -26,7 +26,7 @@ rust_test {
     crate_name: "test_buf",
     cargo_env_compat: true,
     cargo_pkg_version: "1.5.0",
-    srcs: ["tests/test_buf.rs"],
+    crate_root: "tests/test_buf.rs",
     test_suites: ["general-tests"],
     auto_gen_config: true,
     test_options: {
@@ -51,7 +51,7 @@ rust_test {
     crate_name: "test_buf_mut",
     cargo_env_compat: true,
     cargo_pkg_version: "1.5.0",
-    srcs: ["tests/test_buf_mut.rs"],
+    crate_root: "tests/test_buf_mut.rs",
     test_suites: ["general-tests"],
     auto_gen_config: true,
     test_options: {
@@ -76,7 +76,7 @@ rust_test {
     crate_name: "test_bytes",
     cargo_env_compat: true,
     cargo_pkg_version: "1.5.0",
-    srcs: ["tests/test_bytes.rs"],
+    crate_root: "tests/test_bytes.rs",
     test_suites: ["general-tests"],
     auto_gen_config: true,
     test_options: {
@@ -101,7 +101,7 @@ rust_test {
     crate_name: "test_bytes_odd_alloc",
     cargo_env_compat: true,
     cargo_pkg_version: "1.5.0",
-    srcs: ["tests/test_bytes_odd_alloc.rs"],
+    crate_root: "tests/test_bytes_odd_alloc.rs",
     test_suites: ["general-tests"],
     auto_gen_config: true,
     test_options: {
@@ -126,7 +126,7 @@ rust_test {
     crate_name: "test_bytes_vec_alloc",
     cargo_env_compat: true,
     cargo_pkg_version: "1.5.0",
-    srcs: ["tests/test_bytes_vec_alloc.rs"],
+    crate_root: "tests/test_bytes_vec_alloc.rs",
     test_suites: ["general-tests"],
     auto_gen_config: true,
     test_options: {
@@ -151,7 +151,7 @@ rust_test {
     crate_name: "test_chain",
     cargo_env_compat: true,
     cargo_pkg_version: "1.5.0",
-    srcs: ["tests/test_chain.rs"],
+    crate_root: "tests/test_chain.rs",
     test_suites: ["general-tests"],
     auto_gen_config: true,
     test_options: {
@@ -176,7 +176,7 @@ rust_test {
     crate_name: "test_debug",
     cargo_env_compat: true,
     cargo_pkg_version: "1.5.0",
-    srcs: ["tests/test_debug.rs"],
+    crate_root: "tests/test_debug.rs",
     test_suites: ["general-tests"],
     auto_gen_config: true,
     test_options: {
@@ -201,7 +201,7 @@ rust_test {
     crate_name: "test_iter",
     cargo_env_compat: true,
     cargo_pkg_version: "1.5.0",
-    srcs: ["tests/test_iter.rs"],
+    crate_root: "tests/test_iter.rs",
     test_suites: ["general-tests"],
     auto_gen_config: true,
     test_options: {
@@ -226,7 +226,7 @@ rust_test {
     crate_name: "test_reader",
     cargo_env_compat: true,
     cargo_pkg_version: "1.5.0",
-    srcs: ["tests/test_reader.rs"],
+    crate_root: "tests/test_reader.rs",
     test_suites: ["general-tests"],
     auto_gen_config: true,
     test_options: {
@@ -251,7 +251,7 @@ rust_test {
     crate_name: "test_serde",
     cargo_env_compat: true,
     cargo_pkg_version: "1.5.0",
-    srcs: ["tests/test_serde.rs"],
+    crate_root: "tests/test_serde.rs",
     test_suites: ["general-tests"],
     auto_gen_config: true,
     test_options: {
@@ -276,7 +276,7 @@ rust_test {
     crate_name: "test_take",
     cargo_env_compat: true,
     cargo_pkg_version: "1.5.0",
-    srcs: ["tests/test_take.rs"],
+    crate_root: "tests/test_take.rs",
     test_suites: ["general-tests"],
     auto_gen_config: true,
     test_options: {
@@ -301,7 +301,7 @@ rust_library {
     crate_name: "bytes",
     cargo_env_compat: true,
     cargo_pkg_version: "1.5.0",
-    srcs: ["src/lib.rs"],
+    crate_root: "src/lib.rs",
     edition: "2018",
     features: [
         "default",
